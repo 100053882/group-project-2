@@ -1,0 +1,105 @@
+ 
+Introduction to Software Engineering (Fall 2022)
+Instructor: Dr. Davor Svetinovic & Dr. Ruba Mizouni
+Project: Child Monitor 
+Phase 1: Feasibility Study
+Done by:
+Mariam Alhashmi - 100053448 
+Hind Bamatraf - 100053882
+Manar Altamimi -100053100
+Bhoor Abdulla -100053403
+Maha Almarzooqi - 100058367
+
+Table of Contents: 
+Introduction…………………………………………………………………………………………….1
+Scope………………………………………………….………………………………………………..1
+Benefits…………………………………………………………………………………………………1
+Technical……………………………………………………………………………………………….2
+Planning and Resources……………………………………………………………………………..2
+Alternatives and Risks………………………………………………………………………………..2
+Conclusion……………………………………………………………………………………………..2
+
+Introduction: 
+The clients approached us with a problem that they wanted a solution to. The problem was that the clients recently had a newborn child and after maternity leave, the mother has now decided to go back to work. Since both parents are working, they want a way to monitor their child who will be staying either with a nanny or a family member. 
+
+
+
+Scope:
+The aim of the project is to help working parents monitor their young children while they are away. The monitor will help put parents at ease by watching them at all times and can communicate with the nanny or a family member watching the baby through the monitor to convey any instructions or commitments they may have.
+List of included functions:
+-	Highly sensitive microphone
+-	Wifi
+-	Two way audio
+-	Lullabies 
+-	Motion sensor
+-	Ability to zoom in with high definition
+List of excluded functions:
+-	Infrared night vision 
+-	Temperature sensor 
+-	Humidity sensor
+
+Benefits:
+Organizational benefits- improve efficiency of organization
+Create marketable product 
+New or improved system 
+Safety or security 
+
+
+
+
+Technical:
+Rough outline of requirements:
+-	Has a camera
+-	Has to have a microphone
+-	Has to have a motion sensor
+-	Has to have speaker
+
+
+Possible system designs 
+      
+Design features:
+-	The cameras have the ability to rotate in all directions
+-	Accurate motion detector
+-	Can be placed on the wall or on a table.
+-	Flexibility in shapes and colors.
+
+Possible choices of software to be acquired or developed:
+-	Two way communication system
+-	Motion alert system
+-	Voice detection system
+-	App/website to view the baby monitor
+-	Notification system
+
+Estimates of numbers of users, data , transactions:
+-	Possible number of users 1000.
+
+Planning and resources:
+Our group consists of 5 staff members to complete this project. The estimated equipment needed to complete this project includes 1-5 laptops, one per staff member, and the integrated development environment (IDE) Virtual Studio code which we will build our software on, using Java language. Furthermore, the web-based service, Github, will be used when managing our documents alongside the open-source tool PlantUML which will be used when creating our Use-case diagrams. The project at hand is estimated to take 38 days as the delivery of the project is on December 9th, 2022. A more detailed preliminary timetable which includes the list of deliverables with their delivery dates is shown in the below table.
+Preliminary Timetable: 
+Deliverable 	Delivery Date
+Feasibility Study 	November 4,2022
+Requirements Document 	November 11,2022
+Design Document 	November 25,2022
+Final project delivery (with code)	December 9,2022
+
+Alternatives and Risks:
+Alternatives: The project will be developed in-house from scratch, therefore if we fail to deliver any technical aspect we will contract out. Furthermore, in case we are not able to reach one of the objectives, we will bring in a specialist to help us achieve the goal. 
+Phases of delivery: after finishing each phase we will check on the functionality of the added part and its effect on the previous parts. 
+
+Risks:
+What can go wrong:
+-	The camera breaks
+-	connection between the devices are broken
+-	Someone hacks in the system
+-	Forgetting the reset password
+
+How will problems be identified:
+-	A system that detects all users that are logged in and from which device.
+-	Get notified when the camera is disconnected.
+-	Gets notified when any device logs in.
+
+Fallback options:
+-	Have an admin system where the user can delete access from some devices and reset the login password.
+-	Have a 24 hour call center and maintenance team.
+
+Conclusion:  After conducting the feasibility analysis, we have concluded that our project is feasible.
