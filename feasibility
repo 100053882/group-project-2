@@ -20,12 +20,16 @@ Alternatives and Risks…………………………………………………�
 Conclusion……………………………………………………………………………………………..2
 
 Introduction: 
-The clients approached us with a problem that they wanted a solution to. The problem was that the clients recently had a newborn child and after maternity leave, the mother has now decided to go back to work. Since both parents are working, they want a way to monitor their child who will be staying either with a nanny or a family member. 
+The clients approached us with a problem that they wanted a solution to. 
+The problem was that the clients recently had a newborn child and after maternity leave, 
+the mother has now decided to go back to work. Since both parents are working, they want a way to monitor their child who will be staying either with a nanny or a family member. 
 
 
 
 Scope:
-The aim of the project is to help working parents monitor their young children while they are away. The monitor will help put parents at ease by watching them at all times and can communicate with the nanny or a family member watching the baby through the monitor to convey any instructions or commitments they may have.
+The aim of the project is to help working parents monitor their young children while they are away. 
+The monitor will help put parents at ease by watching them at all times and can communicate with the nanny or a family member watching the baby through the monitor to convey any instructions or commitments they may have.
+
 List of included functions:
 -	Highly sensitive microphone
 -	Wifi
@@ -39,10 +43,10 @@ List of excluded functions:
 -	Humidity sensor
 
 Benefits:
-Organizational benefits- improve efficiency of organization
-Create marketable product 
-New or improved system 
-Safety or security 
+The goal of our proposed project is to assist parents in checking up on their child's wellbeing while they are away by developing a monitoring software that has many benefits, 
+including such organizational and professional benefits. Our product design will attain a user-friendly program that is easy to use with a variety of features. 
+The features are developed by creating a new system using well improved technology program systems available. The features include developing a fast response system by updating and notifying parents continuously about any movements from the baby for instance, 
+emergence alerts. Also, parents may control the monitor and interact with the baby while being away. Our database will secure client information by not sharing their data to third parties to increase safety requirements. Our organizational effectiveness focuses on generating a marketable product in less time and costs less.
 
 
 
@@ -74,7 +78,12 @@ Estimates of numbers of users, data , transactions:
 -	Possible number of users 1000.
 
 Planning and resources:
-Our group consists of 5 staff members to complete this project. The estimated equipment needed to complete this project includes 1-5 laptops, one per staff member, and the integrated development environment (IDE) Virtual Studio code which we will build our software on, using Java language. Furthermore, the web-based service, Github, will be used when managing our documents alongside the open-source tool PlantUML which will be used when creating our Use-case diagrams. The project at hand is estimated to take 38 days as the delivery of the project is on December 9th, 2022. A more detailed preliminary timetable which includes the list of deliverables with their delivery dates is shown in the below table.
+Our group consists of 5 staff members to complete this project. 
+The estimated equipment needed to complete this project includes 1-5 laptops, one per staff member, 
+and the integrated development environment (IDE) Virtual Studio code which we will build our software on, 
+using Java language. Furthermore, the web-based service, Github, will be used when managing our documents alongside the open-source tool PlantUML which will be used when creating our Use-case diagrams. 
+The project at hand is estimated to take 38 days as the delivery of the project is on December 9th, 2022. A more detailed preliminary timetable which includes the list of deliverables with their delivery dates is shown in the below table.
+
 Preliminary Timetable: 
 Deliverable 	Delivery Date
 Feasibility Study 	November 4,2022
@@ -83,7 +92,8 @@ Design Document 	November 25,2022
 Final project delivery (with code)	December 9,2022
 
 Alternatives and Risks:
-Alternatives: The project will be developed in-house from scratch, therefore if we fail to deliver any technical aspect we will contract out. Furthermore, in case we are not able to reach one of the objectives, we will bring in a specialist to help us achieve the goal. 
+Alternatives: The project will be developed in-house from scratch, therefore if we fail to deliver any technical aspect we will contract out. 
+Furthermore, in case we are not able to reach one of the objectives, we will bring in a specialist to help us achieve the goal. 
 Phases of delivery: after finishing each phase we will check on the functionality of the added part and its effect on the previous parts. 
 
 Risks:
