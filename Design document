@@ -1,0 +1,211 @@
+
+Introduction to Software Engineering (Fall 2022)
+Instructor: Dr. Davor Svetinovic 
+Project: Child Monitor 
+Phase 3: Design Document
+
+Done by:
+Mariam Alhashmi - 100053448 
+Hind Bamatraf - 100053882
+Manar Altamimi -100053100
+Bhoor Abdulla -100053403
+
+Table of Contents: 
+Introduction……………………………………………………………………….…………………….0
+Sequence diagram…………..……………………….………………………………………………..1
+Sequence diagram VS-Code…………………………………………………………………2
+UML diagram……………………..………………………………….…………………………………3
+UML diagram VS-Code……………………………………………………………………….3
+State diagram……….………………………………………………………………………………….6
+State diagram VS-Code………………………………………………………………………7
+
+
+
+
+Introduction:
+The following design document includes 3 different diagrams and each of their virtual studio codes, each showing certain functions our child monitor app has. The 3 diagrams in this document are the sequence diagram, UML diagram and state diagram.
+
+Sequence Diagram:
+Below is the sequence diagram
+
+
+Sequence Diagram Virtual Studio Code:
+
+@startuml
+title Sequence Diagram For Child Monitor
+Actor Parent
+Parent <- App: Display login page
+Parent-> App : Enter name and password
+App -> System: Verify username/pass
+alt successful case
+   App <-- System: username/pass authenticated
+   App -> Parent: Access granted  
+else some kind of failure
+   alt failed login info
+       loop 20 times
+           App <-- System: username/pass not valid
+           Parent <- App: Re-enter password
+         
+       end
+   else
+       Parent <- App: Display message "Blocked Call Customer Service"
+   end
+end
+App <-- Parent: Display option menue
+group choose option
+App -> System: Option check how many users logged in
+System --> App: Display how many users logged in
+App -> Parent: Request completed
+ 
+else option 2
+   App -> System: Option check temperature chosen
+   System -> Sensor: Request temperature info
+   Sensor --> System: Get temperature info
+   System --> App: Display temperature info
+   App -> Parent: Request completed
+end
+ 
+App <-- Parent: Display option menue
+Parent -> App: Logout request
+App-> System : Logout user and update number of users logged in
+System --> App: Successful logout
+App-> Parent: Display login page
+@enduml
+UML Diagram:
+Below is the UML diagram 
+
+
+UML Diagram Virtual Studio Code:
+@startuml Call center UML for baby monitor
+title UML diagram for support call center
+class ManageCalls{
+    Accept_Call()
+    DenyCall()
+    Trasfer_Call()
+}
+class Client{
+    Client_UserName: String
+    Client_Email: String
+    Client_Password: String
+    Client_Address: String
+    Client_PhoneNumber: int
+     Updated_Client_Address()
+     Updated_Client_PhoneNumber()
+     Delete_Client()
+     Add_Client()
+     Search_Client()
+}
+Class Connection{
+    StateOfCall: int
+    dropConnection()
+}
+Class Camera{
+    CameraID:int
+    isCameraConnected: Boolean
+    isCameraOn: Boolean
+    isCameraRecodring: Boolean
+    Live_Recording_to_Client()
+}
+Class MotionSensor{
+    MotionSensorID: int
+    isMotionSensorWorking: Boolean
+    getReadingFromMotionSensor()
+    saveMotionState()
+}
+ 
+Class TempuratureSensor{
+    TempuratureSensorID: int
+    isTempuratureSensorWorking: Boolean
+    getReadingFromTempuratureSensor()
+    saveTempuratureState()
+}
+class local{
+    localCallRate: long
+}
+class longDistance{
+    longDistanceCallRate: long
+}
+Class Speaker{
+    SpeakerID: int
+    isSpeakerWorking: Boolean
+    PlaySound()
+}
+ 
+Class CheckClientIssue{
+    CheckSpeaker()
+    CheckCamera()
+    CheckSensor()
+    CheckConnection()
+}
+Client -- CheckClientIssue
+Connection -- Client
+ManageCalls -- Client
+ManageCalls -- Connection
+Connection -- local
+Connection -- longDistance
+CheckClientIssue -- Speaker
+CheckClientIssue -- Camera
+CheckClientIssue -- MotionSensor
+CheckClientIssue -- TempuratureSensor
+ 
+@enduml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+State Diagram:
+Below is the state diagram
+
+
+State Diagram Virtual Studio Code:
+
+@startuml
+ 
+title State Diagram for Child Monitor
+ 
+[*]--> Logged_in
+state isCameraRecording <<choice>>
+Logged_in --> isCameraRecording: [is Camera Recording]
+ 
+state isSoundSensorOn <<choice>>
+ 
+isCameraRecording --> isSoundSensorOn: [if yes]\n [Check if sound sensor on]
+ 
+isCameraRecording --> TurnOnCameraRecording: [if no]
+ 
+TurnOnCameraRecording -->isSoundSensorOn
+ 
+state isBabyinCraddle <<choice>>
+ 
+isSoundSensorOn --> isBabyinCraddle: [if yes]\n [Check if Baby in craddle]
+ 
+isSoundSensorOn --> TurnOnSoundSensor: [if no]
+ 
+TurnOnSoundSensor -->isBabyinCraddle
+ 
+state isBabyCrying <<choice>>
+ 
+isBabyinCraddle --> isBabyCrying: [if yes]\n [Check if Baby is Crying]
+ 
+isBabyinCraddle --> SendMessageAlert: [if no]
+ 
+isBabyCrying--> sendSoundandMessageAlert: [if yes]
+ 
+sendSoundandMessageAlert--> [*]
+ 
+SendMessageAlert --> [*]
+ 
+@enduml
