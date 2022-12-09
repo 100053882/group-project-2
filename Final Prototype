@@ -1,0 +1,1257 @@
+
+
+
+
+
+
+
+Introduction to Software Engineering (Fall 2022)
+Instructor: Dr. Davor Svetinovic 
+Project: Child Monitor 
+
+
+
+
+
+
+
+
+
+Done by:
+Mariam Alhashmi - 100053448 
+Hind Bamatraf - 100053882
+Manar Altamimi -100053100
+Bhoor Abdulla -100053403
+
+
+
+
+
+
+Table of Contents: 
+Feasibility Study……...………………….……………………………………………………….…….2
+Introduction……………………………………………………………………………………..2
+Scope………………………………………….………………………………………………..2
+Benefits…………………………………………………………………………………………2
+Technical…………………………………………………………………………………….….3
+Planning and Resources……………………………………………………………………...4
+Alternatives and Risks………………………………………………………………………...4
+Conclusion……………………………………………………………………………………...5
+Requirements Study…………………………………………………………………………………...5
+Problem………………………………………………………………………………………....5
+Background Information…………………………………………………………………...….6
+User Requirements……………………………………………………………………...…….6
+System Requirements…………………………………………………………………………7
+Functional Requirements………………………………………………………...…..7
+Non-Functional Requirements………………………………………………..……..7
+Requirements Table……………………………………………………………………...……7
+Data Dictionary…………………………………………………………………………………9
+Use-Case Description…………………………………………………………………….….10
+Use-Case Diagram…………………………………………………………………………..13
+Requirements Measure…………………………………………………………………...…13
+Design document……………………………………………………………….………..…………...14
+Introduction……………………………………………………………..…………………….14
+Sequence diagram…………..……………………….………………………………………14
+Sequence diagram VS-Code…………………………………………...………….15
+UML diagram……………………..……………………………………………………….….16
+UML diagram VS-Code…………………………………………………………..…17
+State diagram……….………………………………………………………………………..19
+State diagram VS-Code…………………………………………………………….20
+Prototype app…………………………………………………………………………………………22
+Prototype code & screenshots …………………………….………………………………………..24
+
+
+Introduction: 
+The clients approached us with a problem that they wanted a solution to. The problem was that the clients recently had a newborn child and after maternity leave, the mother has now decided to go back to work. Since both parents are working, they want a way to monitor their child who will be staying either with a nanny or a family member. 
+Scope:
+The aim of the project is to help working parents monitor their young children while they are away. The monitor will help put parents at ease by watching them at all times and can communicate with the nanny or a family member watching the baby through the monitor to convey any instructions or commitments they may have.
+List of included functions:
+Highly sensitive microphone
+Wifi
+Two way audio
+Lullabies 
+Motion sensor
+Ability to zoom in with high definition
+List of excluded functions:
+Infrared night vision 
+Temperature sensor 
+Humidity sensor
+
+Benefits:
+The goal of our proposed project is to assist parents in checking up on their child's wellbeing while they are away by developing a monitoring software that has many benefits, including such organizational and professional benefits. Our product design will attain a user-friendly program that is easy to use with a variety of features. The features are developed by creating a new system using well improved technology program systems available. The features include developing a fast response system by updating and notifying parents continuously about any movements from the baby for instance, emergence alerts. Also, parents may control the monitor and interact with the baby while being away. Our database will secure client information by not sharing their data to third parties to increase safety requirements. Our organizational effectiveness focuses on generating  a marketable product in less time and costs less.
+
+
+Technical:
+Rough outline of requirements:
+Has a camera
+Has to have a microphone
+Has to have a motion sensor
+Has to have speaker
+
+
+Possible system designs 
+    
+Design features:
+The cameras have the ability to rotate in all directions
+Accurate motion detector
+Can be placed on the wall or on a table.
+Flexibility in shapes and colors.
+
+Possible choices of software to be acquired or developed:
+Two way communication system
+Motion alert system
+Voice detection system
+App/website to view the baby monitor
+Notification system
+
+Estimates of numbers of users, data , transactions:
+Possible number of users 1000.
+
+
+Planning and resources:
+Our group consists of 5 staff members to complete this project. The estimated equipment needed to complete this project includes 1-5 laptops, one per staff member, and the integrated development environment (IDE) Virtual Studio code which we will build our software on, using Java language. Furthermore, the web-based service, Github, will be used when managing our documents alongside the open-source tool PlantUML which will be used when creating our Use-case diagrams. The project at hand is estimated to take 38 days as the delivery of the project is on December 9th, 2022. A more detailed preliminary timetable which includes the list of deliverables with their delivery dates is shown in the below table.
+Preliminary Timetable: 
+Deliverable 
+Delivery Date
+Feasibility Study 
+November 4,2022
+Requirements Document 
+November 11,2022
+Design Document 
+November 25,2022
+Final project delivery (with code)
+December 9,2022
+
+
+Alternatives and Risks:
+Alternatives: The project will be developed in-house from scratch, therefore if we fail to deliver any technical aspect we will contract out. Furthermore, in case we are not able to reach one of the objectives, we will bring in a specialist to help us achieve the goal. 
+Phases of delivery: after finishing each phase we will check on the functionality of the added part and its effect on the previous parts. 
+
+Risks:
+What can go wrong:
+The camera breaks
+connection between the devices are broken
+Someone hacks in the system
+Forgetting the reset password
+
+How will problems be identified:
+A system that detects all users that are logged in and from which device.
+Get notified when the camera is disconnected.
+Gets notified when any device logs in.
+
+
+Fallback options:
+Have an admin system where the user can delete access from some devices and reset the login password.
+Have a 24 hour call center and maintenance team.
+
+Conclusion:  After conducting the feasibility analysis, we have concluded that our project is feasible.
+
+
+
+
+
+Requirements Study:
+
+Problem :
+The objective of the project is to offer a solution for the clients Mouza and Ahmed to resolve their problem. The clients were problemed when it was time for Mouza to resume work after her maternity leave. Since both parents go to work while their baby is staying at home with a family member or a nanny, they needed a solution to monitor their baby. Our solution is to create a baby monitoring system/app that offers Mouza and Ahmed a way to keep an eye on their two-month-old baby Mohammed and monitor his wellbeing. Our aim is to develop and implement a program that enables parents to convey any instructions and communicate with the nanny or a family member staying with the baby through the monitor. The design will include the acquired features that includes motion sensor, camera and microphone that enables the monitor program to alert and send notification to the parents by the app or website of the monitor. Consequently, to start the project, we used a feasibility study to evaluate the validity of our idea. Moreover, we started defining our specifications and requirements.
+
+Background information : 
+The client returns to work after maternity leave and therefore needs a solution to keep her baby safe and comfortable at work. The client will have someone to take care of the child, perhaps a parent or a nanny. Her working husband, who works in the company's human resources department, called her while she was on maternity leave to check on her and the newborn. However, as the client is back at her office job, it would be ideal if both parents had the opportunity to look after the 3-month-old baby while they are at work.
+
+User requirements : 
+There are specific user requirements that our app has to have in order to provide our clients with the most efficient monitoring system. The following requirements are as follows:
+Easily accessible.
+Easy to use and navigate through.
+Secure, only the parents and the people the parents select can monitor the child and access his/her information.
+ 24/7 monitoring available.
+Updates about when and what the child is eating.
+Updates on the location of the child.
+User can choose when to be notified, whether it be whenever the child eats, leaves the room, sleeps, or wakes up.
+User can communicate with the caretaker and the child through chat, camera, and voice calls.
+User can choose to play lullabies either from a provided list of lullabies or can import his or her own lullaby.
+User can look back and watch the recorded feed.
+User can check the room temperature and be notified when the room is too hot or too cold depending on the room temperature the user will input.
+User can zoom in to look at the baby more closely.
+
+
+
+System requirements :
+Functional Requirements:
+System should be able to record the feed and allow the user to rewatch it.
+System should be able to allow the user to zoom using the app in order to look at the child more closely.
+System should be able to update users whenever specific tasks are completed.
+System should be able to check the temperature of the room the child is in.
+System should be able to track the child’s movement.
+System should be able to allow parents to access their child's information and feed through password and face recognition.
+System should be able to allow user to communicate with child and caretaker through having access to microphones and cameras and chats.
+
+Non Functional:
+Accessibility: Users should be able to easily access, use, and navigate through the app. The time it should take the users to learn how to use the app should be around a minute.
+Privacy: System should only allow parents and the people selected by the parents to have access to child’s information.
+Security: System should keep child data protected from hackers.
+Reliability: System should never loose any child data and should always allow parents to monitor their child 24/7.
+
+
+Requirements Table:
+#
+ID
+Name
+Text
+1
+S0.0
+Monitoring system project
+Describes a system that allows for monitoring a child.
+2
+S1.0
+Accessibility 
+Easily accessible
+3
+S2.0
+Navigation 
+Easy to use and navigate through
+4
+S3.0
+Security 
+Secure, only the parents and the people the parents select can monitor the child and access his/her information.
+5
+S4.0
+Monitoring
+ 24/7 monitoring available.
+
+
+6
+S5.0
+Updates
+System is able to update and notify user after specific tasks are complete. 
+7
+S5.1
+Updates eating
+Updates about when and what the child is eating.
+
+
+8
+S5.2
+Updates location
+Updates on the location of the child.
+
+
+9
+S5.3
+Notification flexibility
+User can choose when to be notified, whether it be whenever the child eats, leaves the room, sleeps, or wakes up.
+
+
+10
+S6.0
+Communication
+User can communicate with the caretaker and the child through chat, camera, and voice calls.
+
+
+11
+S7.0
+Lullaby flexibility
+User can choose to play lullabies either from a provided list of lullabies or can import his or her own lullaby.
+
+
+12
+S8.0
+Recordings
+User can look back and watch the recorded feed.
+13
+S9.0
+Temperature checker
+User can check the room temperature and be notified when the room is too hot or too cold depending on the room temperature the user will input.
+
+
+14
+S10.0
+Zooming flexibility 
+User can zoom in to look at the baby more closely.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data Dictionary:
+Variable name
+Data type
+Description
+features
+Client_UserName
+String
+Stores the username of the user
+Used to check if the entered username matches the registered username, if so it allows the user to enter, otherwise the user must retry entering the username.
+Client_Password
+String
+Stores the password of the user
+Used to check if the entered password matches the saved password. If yes, the user can enter the password, otherwise the user will have to retry entering the password.
+IsCameraConnected
+Boolean
+Stored true and false information
+Used to check if the camera is connected to the system, it displays an error when the camera is disconnected.
+Current_users
+Int
+Stores the number of users currently 
+Checks and displays the number of people that are logged into the same account
+
+
+Use Case Description :
+The actors of the system are:
+Parents 
+Family member or nanny
+The functions (use-cases) of the system are:
+Create account (sign up)
+Login 
+Detect sounds
+Display live stream
+Display recorded video 
+Send and receive chat 
+Notify changes 
+Alert for emergency 
+Sense temperature and humidity 
+Access information 
+Save data
+
+Examples of Use Case Structure: 
+Use Case 1:
+ Name: Login 
+Description: This use case allows the user (parent) to login to their account. First, the user opens the app or website to login in. Then, enter their username and password to access their account. Finally, the system will view their information.
+Actors: parents, nanny, and system 
+Pre-Conditions: 
+Existing account
+Post-Conditions: 
+Username and password are valid and approved by the system for access
+Successful path: 
+a)    The user opens the app/website
+b)    The system requests username and password information 
+c)     The user enters username and password
+d)    The system checks account validity 
+e)    The system verifies username and password match
+f)      The system provides user’s data
+g)    The user can access their account 
+Alternative path: 
+-        Invalid account: the system will notify the user that the username is not found because no account is registered (part d)
+-        Incorrect password: the system will inform the user to re-enter the password because the password is incorrect (part e)
+-        Forget password: the system will inform the user to change password because of many failed attempts (part e)
+
+Exceptions: 
+Username not registered: the system promotes “Invalid Username”
+Incorrect password: the system promotes “Invalid Password”
+Rules: 
+Username is a valid account 
+Password matches
+ 
+  Use Case 2:
+Name: Display live stream
+Description: This use case enables the user (parent) to watch a live stream. First, the user selects a live stream. Then, the system checks camera accessibility. Finally, if the system approves for camera permission, the stream will be displayed.
+Actors: Parents, system, and camera 
+Pre-Conditions: Camera accessibility
+Post-Conditions: System displays live stream for the user through the app/website
+ Successful path: 
+a)    The user clicks on live stream video option
+b)    The system requests camera permission accessibility
+c)     The user confirms camera permission
+d)    The system checks wi-fi connectivity
+e)     The system loads live stream functionality  
+f)      The system receives and record data and information in database 
+g)    The user can view live stream video 
+ Alternative path: 
+Camera permission denied: the system will notify the user that camera has no access (part c)
+No Wi-fi connection: the system will notify the user that they are not connected to the wi-fi (part d)
+Poor Wi-fi connection: The system will warn the user for low quality resolution (part d)
+Exceptions:
+Can’t view live stream: the system promotes “Camera Access Denied”
+Not connected to Wi-Fi: the system promotes “Not Connected to Wi-Fi”
+rules: 
+Connected to Wi-Fi 
+Monitor and app have access to camera 
+
+ 
+
+
+
+
+
+
+Use Case Diagram:
+
+
+
+
+Requirements measures:
+PROPERTY
+MEASURE
+Speed
+2.0 second speed between processed transactions
+2.0 second speed refresh time
+Size
+16Bytes
+ROM chips
+Ease of Use
+Training time (tour)
+Number of help frames
+Reliability
+Mean time to failure
+Probability of unavailability (15%)
+Rate of failure occurrence (2%)
+
+
+Robustness
+Time to restart after failure (2 minutes)
+Percentage of Events that could cause failure
+(20%)( failure to log in/wifi/ other mistakes)
+Probability of data corruption on failure (0%) everything will be automatically saved 
+Portability
+Number of target systems
+
+
+
+
+
+Design Document
+
+Introduction:
+The following design document includes 3 different diagrams and each of their virtual studio codes, each showing certain functions our child monitor app has. The 3 diagrams in this document are the sequence diagram, UML diagram and state diagram.
+
+Sequence Diagram:
+Below is the sequence diagram
+
+
+
+
+Sequence Diagram Virtual Studio Code:
+
+@startuml
+title Sequence Diagram For Child Monitor
+Actor Parent
+Parent <- App: Display login page
+Parent-> App : Enter name and password
+App -> System: Verify username/pass
+alt successful case
+   App <-- System: username/pass authenticated
+   App -> Parent: Access granted  
+else some kind of failure
+   alt failed login info
+       loop 20 times
+           App <-- System: username/pass not valid
+           Parent <- App: Re-enter password
+         
+       end
+   else
+       Parent <- App: Display message "Blocked Call Customer Service"
+   end
+end
+App <-- Parent: Display option menue
+group choose option
+App -> System: Option check how many users logged in
+System --> App: Display how many users logged in
+App -> Parent: Request completed
+ 
+else option 2
+   App -> System: Option check temperature chosen
+   System -> Sensor: Request temperature info
+   Sensor --> System: Get temperature info
+   System --> App: Display temperature info
+   App -> Parent: Request completed
+end
+ 
+App <-- Parent: Display option menue
+Parent -> App: Logout request
+App-> System : Logout user and update number of users logged in
+System --> App: Successful logout
+App-> Parent: Display login page
+@enduml
+UML Diagram:
+Below is the UML diagram 
+
+
+Virtual Studio Code for UML Diagram: 
+@startuml Call center UML for baby monitor
+title UML diagram for support call center
+class ManageCalls{
+    Accept_Call()
+    DenyCall()
+    Trasfer_Call()
+}
+class Client{
+    Client_UserName: String
+    Client_Email: String
+    Client_Password: String
+    Client_Address: String
+    Client_PhoneNumber: int
+     Updated_Client_Address()
+     Updated_Client_PhoneNumber()
+     Delete_Client()
+     Add_Client()
+     Search_Client()
+}
+Class Connection{
+    StateOfCall: int
+    dropConnection()
+}
+Class Camera{
+    CameraID:int
+    isCameraConnected: Boolean
+    isCameraOn: Boolean
+    isCameraRecodring: Boolean
+    Live_Recording_to_Client()
+}
+Class MotionSensor{
+    MotionSensorID: int
+    isMotionSensorWorking: Boolean
+    getReadingFromMotionSensor()
+    saveMotionState()
+}
+ 
+Class TempuratureSensor{
+    TempuratureSensorID: int
+    isTempuratureSensorWorking: Boolean
+    getReadingFromTempuratureSensor()
+    saveTempuratureState()
+}
+class local{
+    localCallRate: long
+}
+class longDistance{
+    longDistanceCallRate: long
+}
+Class Speaker{
+    SpeakerID: int
+    isSpeakerWorking: Boolean
+    PlaySound()
+}
+ 
+Class CheckClientIssue{
+    CheckSpeaker()
+    CheckCamera()
+    CheckSensor()
+    CheckConnection()
+}
+Client -- CheckClientIssue
+Connection -- Client
+ManageCalls -- Client
+ManageCalls -- Connection
+Connection -- local
+Connection -- longDistance
+CheckClientIssue -- Speaker
+CheckClientIssue -- Camera
+CheckClientIssue -- MotionSensor
+CheckClientIssue -- TempuratureSensor
+ 
+@enduml
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+State Diagram:
+Below is the state diagram
+
+
+ Virtual Studio Code for State Diagram:
+@startuml
+ 
+title State Diagram for Child Monitor
+ 
+[*]--> Logged_in
+state isCameraRecording <<choice>>
+Logged_in --> isCameraRecording: [is Camera Recording]
+ 
+state isSoundSensorOn <<choice>>
+ 
+isCameraRecording --> isSoundSensorOn: [if yes]\n [Check if sound sensor on]
+ 
+isCameraRecording --> TurnOnCameraRecording: [if no]
+ 
+TurnOnCameraRecording -->isSoundSensorOn
+ 
+state isBabyinCraddle <<choice>>
+ 
+isSoundSensorOn --> isBabyinCraddle: [if yes]\n [Check if Baby in craddle]
+ 
+isSoundSensorOn --> TurnOnSoundSensor: [if no]
+ 
+TurnOnSoundSensor -->isBabyinCraddle
+ 
+state isBabyCrying <<choice>>
+ 
+isBabyinCraddle --> isBabyCrying: [if yes]\n [Check if Baby is Crying]
+ 
+isBabyinCraddle --> SendMessageAlert: [if no]
+ 
+isBabyCrying--> sendSoundandMessageAlert: [if yes]
+ 
+sendSoundandMessageAlert--> [*]
+ 
+SendMessageAlert --> [*]
+ 
+@enduml
+
+
+
+Prototype app:
+
+We have created a prototype of the app itself, below you will find a link that allows for the downloading of our app.
+
+https://previewer.adalo.com/5f4ba0d9-f94c-4dfe-a993-4f86cb9b3496?target=e19e6222746642d7a01309e72004b7c1
+
+Once you have downloaded the app, please login using the details provided below:
+Email: hend.syoofi@gmail.com
+Password: Hind
+
+Please note that once logged in, only the ‘camera’ option works along with the options provided after clicking the camera option.
+
+
+
+
+
+
+
+Prototype Code & Screenshots:                            Email:Manar@ku.ac.ae Password:m1234
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Main:
+package introSoftware_project;
+ 
+import java.awt.EventQueue;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.*;
+ 
+public class Main extends JFrame {
+    public Main() {
+ 
+        setTitle("BCC Baby Cam Company");
+        getContentPane().setLayout(null);
+        setBounds(100, 100, 681, 719);
+ 
+        getContentPane().setVisible(true);
+        getContentPane().setSize(500, 500);
+       
+        JLabel lblNewLabel_2 = new JLabel("New label");
+        lblNewLabel_2.setIcon(new ImageIcon("D:\\User\\Pictures\\Saved Pictures\\IMG-20221209-WA0001.jpg"));
+        lblNewLabel_2.setBounds(202, 71, 280, 130);
+        getContentPane().add(lblNewLabel_2);
+       
+        JLabel lblNewLabel = new JLabel("BCC Baby Cam Company");
+        lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblNewLabel.setBounds(257, 212, 188, 27);
+        getContentPane().add(lblNewLabel);
+       
+        JLabel lblNewLabel_1 = new JLabel("Please Select:");
+        lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblNewLabel_1.setBounds(179, 312, 124, 27);
+        getContentPane().add(lblNewLabel_1);
+       
+        JButton SignIn = new JButton("Sign In");
+        SignIn.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+               
+                SignIn.setEnabled(true);
+                LogIn login = new LogIn();
+                login.setVisible(true);
+                getContentPane().setVisible(false);
+ 
+               
+            }
+        });
+        SignIn.setFont(new Font("Tahoma", Font.BOLD, 15));
+        SignIn.setBounds(245, 375, 200, 75);
+        getContentPane().add(SignIn);
+       
+        JButton SignOut = new JButton("Sign Up");
+        SignOut.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                SignOut.setEnabled(true);
+                SignUP signup = new SignUP();
+                signup.setVisible(true);
+                getContentPane().setVisible(false);
+ 
+            }
+        });
+        SignOut.setFont(new Font("Tahoma", Font.BOLD, 15));
+        SignOut.setBounds(245, 486, 200, 75);
+        getContentPane().add(SignOut);
+       
+       
+        }
+   
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    Main frame = new Main();
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });    
+ 
+    }
+   
+} //class
+
+Login:
+package introSoftware_project;
+ 
+ 
+import javax.swing.JFrame;
+ 
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.ImageIcon;
+import java.awt.Font;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+ 
+import java.awt.event.ActionEvent;
+import javax.swing.JPasswordField;
+ 
+public class LogIn extends JFrame {
+    private JTextField EmailField;
+    String filePath = "user.txt";
+    private JPasswordField PassFeild;
+ 
+        public LogIn() {
+            setTitle("BCC Baby Cam Company");
+ 
+            getContentPane().setLayout(null);
+            setBounds(100, 100, 681, 719);
+ 
+            JLabel lblNewLabel = new JLabel("");
+            lblNewLabel.setIcon(new ImageIcon("D:\\User\\Pictures\\Saved Pictures\\IMG-20221209-WA0001.jpg"));
+            lblNewLabel.setBounds(197, 62, 307, 128);
+            getContentPane().add(lblNewLabel);
+           
+            JLabel lblNewLabel_1 = new JLabel("BCC Log In Page");
+            lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 17));
+            lblNewLabel_1.setBounds(279, 201, 142, 28);
+            getContentPane().add(lblNewLabel_1);
+           
+            JLabel lblNewLabel_2 = new JLabel("Email:");
+            lblNewLabel_2.setFont(new Font("Tahoma", Font.BOLD, 15));
+            lblNewLabel_2.setBounds(247, 330, 46, 19);
+            getContentPane().add(lblNewLabel_2);
+           
+            EmailField = new JTextField();
+            EmailField.setFont(new Font("Tahoma", Font.PLAIN, 15));
+            EmailField.setBounds(338, 329, 166, 20);
+            getContentPane().add(EmailField);
+            EmailField.setColumns(10);
+           
+            JLabel lblNewLabel_3 = new JLabel("Password:");
+            lblNewLabel_3.setFont(new Font("Tahoma", Font.BOLD, 15));
+            lblNewLabel_3.setBounds(216, 416, 78, 19);
+            getContentPane().add(lblNewLabel_3);
+           
+            JButton btnNewButton = new JButton("Cancel");
+            btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 15));
+            btnNewButton.addActionListener(new ActionListener() {
+                public void actionPerformed(ActionEvent e) {
+                    btnNewButton.setEnabled(true);
+                    Main main = new Main();
+                    main.setVisible(true);
+                    getContentPane().setVisible(false);
+                }
+            });
+            btnNewButton.setBounds(185, 569, 110, 34);
+            getContentPane().add(btnNewButton);
+           
+            JButton SignIn = new JButton("Sign In");
+            SignIn.addActionListener(new ActionListener() {
+                @Override
+           
+                public void actionPerformed(ActionEvent evt) {
+                   
+                        if ( SignIn.isEnabled() && EmailField.getText().equals("Manar@ku.ac.ae") && (new String (PassFeild.getPassword())).equals("m1234")) {
+                            JOptionPane.showMessageDialog( null, " You Have Successfully logged in! ");
+                            SignIn.setEnabled(true);
+ 
+                            OptionPage page = new OptionPage();
+                            page.setVisible(true);
+                            getContentPane().setVisible(false);
+                           
+                           
+                        }
+ 
+                   
+                }});
+            SignIn.setFont(new Font("Tahoma", Font.BOLD, 15));
+            SignIn.setBounds(400, 569, 104, 34);
+            getContentPane().add(SignIn);
+           
+            PassFeild = new JPasswordField();
+            PassFeild.setBounds(338, 417, 166, 20);
+            getContentPane().add(PassFeild);
+           
+        }
+}
+ 
+
+SignUp:
+package introSoftware_project;
+ 
+ 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.event.ActionListener;
+import java.io.BufferedWriter;
+ 
+import java.io.FileWriter;
+import java.io.IOException;
+import java.awt.event.ActionEvent;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.DefaultComboBoxModel;
+ 
+public class SignUP extends JFrame {
+ 
+    private JPanel contentPane;
+    private JTextField EmailT;
+    String filePath = "user.txt";
+    private JTextField NameT;
+    private JTextField PhoneT;
+    private JTextField PassT;
+ 
+ 
+    public SignUP() {
+       
+        setTitle("BCC Baby Cam Company");
+ 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(100, 100, 681, 719);
+        contentPane = new JPanel();
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+ 
+        setContentPane(contentPane);
+        contentPane.setLayout(null);
+       
+        EmailT = new JTextField();
+        EmailT.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                 
+            }
+        });
+        EmailT.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        EmailT.setBounds(327, 439, 176, 20);
+        contentPane.add(EmailT);
+        EmailT.setColumns(10);
+       
+        JLabel lblNewLabel = new JLabel("Email:");
+        lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblNewLabel.setBounds(216, 441, 46, 17);
+        contentPane.add(lblNewLabel);
+       
+        JLabel lblPassword = new JLabel("Password:");
+        lblPassword.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblPassword.setBounds(184, 481, 78, 17);
+        contentPane.add(lblPassword);
+       
+        JLabel lblPassword_1 = new JLabel("");
+        ImageIcon icon =  new ImageIcon("D:\\User\\Pictures\\Saved Pictures\\IMG-20221209-WA0001.jpg");
+        Image img= icon.getImage();
+        lblPassword_1.setIcon(icon);
+        lblPassword_1.setBounds(180, 113, 307, 164);
+        contentPane.add(lblPassword_1);
+       
+        JComboBox GenderT = new JComboBox();
+        GenderT.setModel(new DefaultComboBoxModel(new String[] {"Female", "Male"}));
+        GenderT.setBounds(327, 394, 92, 22);
+        contentPane.add(GenderT);
+       
+        JLabel lblNewLabel_1 = new JLabel("Set an Account with BCC");
+        lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 17));
+        lblNewLabel_1.setBounds(231, 273, 216, 33);
+        contentPane.add(lblNewLabel_1);
+       
+        JButton Register = new JButton("Register");
+        Register.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                           
+                 
+                      String Email = EmailT.getText();                    
+                      String Pass = PassT.getText();
+                      String Name = NameT.getText();
+                      String Gender = GenderT.getSelectedItem().toString();
+                      String Phone = PhoneT.getText();
+                      String Seperator= ",";
+                      String newLine= "\n";
+ 
+                      FileWriter output;
+                    try {
+                        output = new FileWriter( filePath, true );
+                          BufferedWriter writer = new BufferedWriter(output);
+                          output.append(newLine);
+               
+                          output.append(Email);
+                          output.append(Seperator);
+                          output.append(Pass);
+                          output.append(Seperator);
+                          output.append(Name);
+                          output.append(Seperator);
+                          output.append(Phone);
+                          output.append(Seperator);
+                          output.append(Gender);
+                          writer.close();
+                         
+                          JOptionPane.showMessageDialog( null, " You Have Successfully Signed Up! ");
+                          JOptionPane.showMessageDialog( null, " Keep your mind at ease with Baby Cam Company BCC! ");
+ 
+                          Register.setEnabled(true);
+ 
+                            Main main = new Main();
+                            main.setVisible(true);
+                            getContentPane().setVisible(false);
+ 
+                    } catch (IOException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                       
+            }
+               
+           
+        });
+        Register.setFont(new Font("Tahoma", Font.BOLD, 15));
+        Register.setBounds(402, 603, 101, 33);
+        contentPane.add(Register);
+       
+        JButton btnCancel = new JButton("Cancel");
+        btnCancel.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+               
+                btnCancel.setEnabled(true);
+                    Main main = new Main();
+                    main.setVisible(true);
+                    getContentPane().setVisible(false);
+            }
+        });
+        btnCancel.setFont(new Font("Tahoma", Font.BOLD, 15));
+        btnCancel.setBounds(164, 603, 101, 33);
+        contentPane.add(btnCancel);
+       
+        JLabel lblNewLabel_1_1 = new JLabel("Sign Up");
+        lblNewLabel_1_1.setFont(new Font("Tahoma", Font.BOLD, 20));
+        lblNewLabel_1_1.setBounds(32, 35, 216, 33);
+        contentPane.add(lblNewLabel_1_1);
+       
+        JLabel lblName = new JLabel("Name:");
+        lblName.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblName.setBounds(216, 358, 48, 17);
+        contentPane.add(lblName);
+       
+        JLabel lblPhoneNumber = new JLabel("Phone Number:");
+        lblPhoneNumber.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblPhoneNumber.setBounds(151, 523, 114, 17);
+        contentPane.add(lblPhoneNumber);
+       
+ 
+       
+        NameT = new JTextField();
+        NameT.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        NameT.setColumns(10);
+        NameT.setBounds(327, 356, 176, 20);
+        contentPane.add(NameT);
+       
+        PhoneT = new JTextField();
+        PhoneT.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        PhoneT.setColumns(10);
+        PhoneT.setBounds(327, 521, 176, 20);
+        contentPane.add(PhoneT);
+       
+        JLabel lblGender = new JLabel("Gender:");
+        lblGender.setFont(new Font("Tahoma", Font.BOLD, 15));
+        lblGender.setBounds(203, 395, 59, 17);
+        contentPane.add(lblGender);
+       
+        PassT = new JTextField();
+        PassT.setFont(new Font("Tahoma", Font.PLAIN, 15));
+        PassT.setColumns(10);
+        PassT.setBounds(327, 479, 176, 20);
+        contentPane.add(PassT);
+       
+       
+    }
+}
+
+OptionPage:
+package introSoftware_project;
+ 
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+ 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Panel;
+import java.awt.ScrollPane;
+import java.awt.Label;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.Component;
+import javax.swing.Box;
+import javax.swing.JTextPane;
+import java.awt.TextField;
+import javax.swing.JLabel;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import javax.swing.ImageIcon;
+import java.awt.Color;
+import java.awt.SystemColor;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import java.awt.Canvas;
+import javax.swing.JToolBar;
+import javax.swing.UIManager;
+import java.awt.Dimension;
+ 
+public class OptionPage extends JFrame {
+ 
+    private JPanel contentPane;
+ 
+    public OptionPage() {
+        setTitle("BCC Baby Cam Company");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(100, 100, 681, 719);
+       
+        contentPane = new JPanel();
+        contentPane.setMaximumSize(new Dimension(100, 100));
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+ 
+        setContentPane(contentPane);
+        contentPane.setLayout(null);
+       
+        JButton btnNewButton = new JButton("Camera");
+        btnNewButton.setToolTipText("");
+        btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        btnNewButton.setForeground(Color.BLACK);
+        btnNewButton.setBackground(UIManager.getColor("Button.highlight"));
+        btnNewButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+ 
+                btnNewButton.setEnabled(true);
+                Camera cam = new Camera();
+                cam.setVisible(true);
+                getContentPane().setVisible(false);
+               
+            }
+        });
+        btnNewButton.setBounds(37, 313, 249, 48);
+        contentPane.add(btnNewButton);
+       
+        JButton btnNewButton_1 = new JButton("Go to Chat");
+        btnNewButton_1.setBackground(UIManager.getColor("Button.disabledShadow"));
+        btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        btnNewButton_1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                btnNewButton_1. setBackground(Color. blue);
+                btnNewButton_1.setOpaque(true);
+ 
+            }
+        });
+        btnNewButton_1.setBounds(387, 313, 249, 48);
+        contentPane.add(btnNewButton_1);
+       
+        JButton btnNewButton_2 = new JButton("Check Temperature");
+        btnNewButton_2.setBackground(UIManager.getColor("Button.disabledShadow"));
+        btnNewButton_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        btnNewButton_2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
+        btnNewButton_2.setBounds(37, 614, 249, 48);
+        contentPane.add(btnNewButton_2);
+       
+        JButton btnNewButton_3 = new JButton("Lullabies & White noise");
+        btnNewButton_3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+            }
+        });
+        btnNewButton_3.setBackground(UIManager.getColor("Button.disabledShadow"));
+        btnNewButton_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        btnNewButton_3.setBounds(387, 614, 249, 48);
+        contentPane.add(btnNewButton_3);
+       
+        JLabel lblNewLabel = new JLabel("Welcome to BBC Baby Cam Company");
+        lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 35));
+        lblNewLabel.setToolTipText("");
+        lblNewLabel.setBounds(10, 11, 626, 48);
+        contentPane.add(lblNewLabel);
+       
+        JLabel lblHome = new JLabel("Home");
+        lblHome.setFont(new Font("Tahoma", Font.PLAIN, 35));
+        lblHome.setBounds(10, 70, 97, 35);
+        contentPane.add(lblHome);
+       
+        Component horizontalGlue = Box.createHorizontalGlue();
+        horizontalGlue.setForeground(new Color(0, 0, 0));
+        horizontalGlue.setFont(null);
+        horizontalGlue.setBackground(new Color(0, 0, 0));
+        horizontalGlue.setBounds(-18, 55, 694, 13);
+        contentPane.add(horizontalGlue);
+       
+        JLabel lblNewLabel_1_1 = new JLabel("");
+        lblNewLabel_1_1.setIcon(new ImageIcon("D:\\User\\Pictures\\Saved Pictures\\IMG-20221209-WA0003.jpg"));
+        lblNewLabel_1_1.setToolTipText("");
+        lblNewLabel_1_1.setPreferredSize(new Dimension(24, 13));
+        lblNewLabel_1_1.setBounds(397, 407, 226, 191);
+        contentPane.add(lblNewLabel_1_1);
+       
+        JLabel lblNewLabel_1_2 = new JLabel("");
+        lblNewLabel_1_2.setIcon(new ImageIcon("D:\\User\\Pictures\\IMG-20221209-WA0006.jpg"));
+        lblNewLabel_1_2.setToolTipText("");
+        lblNewLabel_1_2.setPreferredSize(new Dimension(0, 0));
+        lblNewLabel_1_2.setBounds(111, 372, 97, 220);
+        contentPane.add(lblNewLabel_1_2);
+       
+        JLabel lblNewLabel_1 = new JLabel("New label");
+        lblNewLabel_1.setIcon(new ImageIcon("D:\\User\\Pictures\\Saved Pictures\\IMG-20221209-WA0002.jpg"));
+        lblNewLabel_1.setBounds(48, 144, 226, 158);
+        contentPane.add(lblNewLabel_1);
+       
+        JLabel lblNewLabel_2 = new JLabel("New label");
+        lblNewLabel_2.setIcon(new ImageIcon("D:\\User\\Pictures\\IMG-20221209-WA0005.jpg"));
+        lblNewLabel_2.setBounds(416, 132, 200, 170);
+        contentPane.add(lblNewLabel_2);
+    }
+   
+}
+ 
+
+Camera:
+package introSoftware_project;
+ 
+import java.awt.EventQueue;
+ 
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import java.awt.Dimension;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.Color;
+import java.awt.Desktop;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+import java.net.URL;
+import java.awt.event.ActionEvent;
+import javax.swing.UIManager;
+import java.awt.SystemColor;
+ 
+public class Camera extends JFrame {
+ 
+    private JPanel contentPane;
+ 
+    public Camera() {
+        setTitle("BCC Baby Cam Company");
+ 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(100, 100, 681, 719);
+        contentPane = new JPanel();
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+ 
+        setContentPane(contentPane);
+        contentPane.setLayout(null);
+       
+        JButton btnNewButton = new JButton("Watch Live");
+        btnNewButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                try {
+                    Desktop.getDesktop().browse(new URL("https://www.google.com/?client=safari").toURI());}
+                    catch(Exception e) {
+                       
+                    }
+                }
+           
+        });
+        btnNewButton.setToolTipText("");
+        btnNewButton.setForeground(UIManager.getColor("Button.disabledShadow"));
+        btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        btnNewButton.setBackground(UIManager.getColor("Button.disabledShadow"));
+        btnNewButton.setBounds(200, 398, 274, 84);
+        contentPane.add(btnNewButton);
+       
+        JButton btnNewButton_1 = new JButton("Watch Recorded Feed");
+        btnNewButton_1.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                try {
+                    Desktop.getDesktop().browse(new URL("https://www.youtube.com/watch?v=NAdf0CNsy4M&ab_channel=scottybugman").toURI());}
+                    catch(Exception e) {
+                       
+                    }
+            }
+        });
+        btnNewButton_1.setToolTipText("");
+        btnNewButton_1.setForeground(UIManager.getColor("Button.disabledShadow"));
+        btnNewButton_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+        btnNewButton_1.setBackground(UIManager.getColor("Button.disabledShadow"));
+        btnNewButton_1.setBounds(200, 512, 274, 84);
+        contentPane.add(btnNewButton_1);
+       
+        JLabel lblNewLabel = new JLabel("");
+        lblNewLabel.setIcon(new ImageIcon("D:\\User\\Pictures\\IMG-20221209-WA0007.jpg"));
+        lblNewLabel.setBounds(200, 78, 274, 292);
+        contentPane.add(lblNewLabel);
+       
+        JLabel lblNewLabel_1 = new JLabel("Camera");
+        lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 20));
+        lblNewLabel_1.setBounds(37, 11, 91, 49);
+        contentPane.add(lblNewLabel_1);
+        }
+   
+ 
+    }
+ 
